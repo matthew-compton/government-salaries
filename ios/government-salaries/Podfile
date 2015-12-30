@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'government-salaries' do
+    pod 'Firebase', '>= 2.5.0'
+end
+
+target 'government-salariesTests' do
+
+end
+
+target 'government-salariesUITests' do
+
+end
+

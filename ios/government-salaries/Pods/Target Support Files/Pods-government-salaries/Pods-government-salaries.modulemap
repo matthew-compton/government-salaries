@@ -1,0 +1,6 @@
+framework module Pods_government_salaries {
+  umbrella header "Pods-government-salaries-umbrella.h"
+
+  export *
+  module * { export * }
+}
