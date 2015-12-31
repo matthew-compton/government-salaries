@@ -1,6 +1,6 @@
-package com.ambergleam.android.governmentsalaries;
+package com.ambergleam.android.governmentsalaries.model;
 
-public class Employee {
+public class FirebaseEmployee {
 
     private String name;
     private String organization;
@@ -9,7 +9,7 @@ public class Employee {
     private String travel;
     private String year;
 
-    public Employee() {
+    public FirebaseEmployee() {
         // empty default constructor, necessary for Firebase to be able to deserialize employees
     }
 

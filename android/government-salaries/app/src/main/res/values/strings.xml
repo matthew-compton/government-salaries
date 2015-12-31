@@ -1,3 +1,17 @@
 <resources>
+
+    <!-- General -->
     <string name="app_name">Government Salaries</string>
+    <string name="data_load_failure">"Failed to load data.\nTry again later."</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_licenses_title"><b>Open-Source Licenses</b></string>
+    <string name="dialog_licenses_image_content_description">Courthouse Icon</string>
+    <string name="dialog_about_content"><b>Government Salaries</b>\n\nCopyright \u00A9 2015\nMatthew Compton\nAll Rights Reserved</string>
+    <string name="dialog_about_image_content_description">Android Logo</string>
+
+    <!-- Menu Items -->
+    <string name="menu_licenses">Licenses</string>
+    <string name="menu_about">About</string>
+
 </resources>
