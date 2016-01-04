@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".controller.SearchActivity"/>
         <activity android:name=".controller.SearchResultsActivity"/>
+        <activity android:name=".controller.EmployeeActivity"/>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.ambergleam.android.governmentsalaries.controller;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.os.Bundle;
@@ -60,21 +61,25 @@ public class SearchResultsFragment extends BaseFragment {
 
     public class EmployeeHolder extends RecyclerView.ViewHolder {
 
-        private ListItemEmployeeBinding mListItemEmployeeBinding;
+        private ListItemEmployeeBinding mEmployeeBinding;
 
         public EmployeeHolder(View rowView) {
             super(rowView);
-            mListItemEmployeeBinding = DataBindingUtil.bind(rowView);
+            mEmployeeBinding = DataBindingUtil.bind(rowView);
         }
 
         public ViewDataBinding getBinding() {
-            return mListItemEmployeeBinding;
+            return mEmployeeBinding;
         }
 
         public void bindEmployee(Employee employee) {
-            EmployeeViewModel videoViewModel = new EmployeeViewModel(employee);
-            mListItemEmployeeBinding.setVariable(BR.employee, videoViewModel);
-            mListItemEmployeeBinding.executePendingBindings();
+            EmployeeViewModel employeeViewModel = new EmployeeViewModel(employee);
+            mEmployeeBinding.setVariable(BR.employee, employeeViewModel);
+            mEmployeeBinding.setVariable(BR.rowClickListener, (View.OnClickListener) v -> {
+                Intent intent = EmployeeActivity.newIntent(getActivity(), employee);
+                startActivity(intent);
+            });
+            mEmployeeBinding.executePendingBindings();
         }
 
     }
