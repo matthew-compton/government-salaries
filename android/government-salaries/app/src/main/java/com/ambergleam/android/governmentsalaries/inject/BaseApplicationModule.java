@@ -3,8 +3,10 @@ package com.ambergleam.android.governmentsalaries.inject;
 import android.content.Context;
 
 import com.ambergleam.android.governmentsalaries.BaseApplication;
+import com.ambergleam.android.governmentsalaries.BuildConfig;
 import com.ambergleam.android.governmentsalaries.model.DataManager;
 import com.ambergleam.android.governmentsalaries.model.LiveDataManager;
+import com.ambergleam.android.governmentsalaries.model.MockDataManager;
 
 import javax.inject.Singleton;
 
@@ -29,7 +31,7 @@ public class BaseApplicationModule {
     @Provides
     @Singleton
     DataManager providesDataManager(Context context) {
-        return new LiveDataManager(context);
+        return BuildConfig.DEBUG ? new MockDataManager(1000) : new LiveDataManager(context);
     }
 
 }

@@ -1,6 +1,6 @@
 package com.ambergleam.android.governmentsalaries.model;
 
-public class MockEmployee extends Employee{
+public class MockEmployee extends Employee {
 
     public static final String MOCK_NAME = "Burdell, George P";
     public static final String MOCK_ORGANIZATION = "Georgia Tech";

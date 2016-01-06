@@ -29,6 +29,15 @@ public class Employee implements Comparable, Serializable {
         this.mYear = year;
     }
 
+    public char getFirstChar() {
+        char firstChar = Character.toUpperCase(getName().charAt(0));
+        if (!Character.isLetter(firstChar)) {
+            return '#';
+        } else {
+            return firstChar;
+        }
+    }
+
     public String getName() {
         return mName;
     }

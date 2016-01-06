@@ -1,5 +1,8 @@
 package com.ambergleam.android.governmentsalaries.model;
 
+import com.ambergleam.android.governmentsalaries.event.EventHelper;
+import com.ambergleam.android.governmentsalaries.event.LoadDataSuccessEvent;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +22,7 @@ public class MockDataManager implements DataManager {
         for (int i = 0; i < mSize; i++) {
             mEmployees.add(new MockEmployee());
         }
+        EventHelper.postEvent(new LoadDataSuccessEvent());
     }
 
     @Override

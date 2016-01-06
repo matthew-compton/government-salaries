@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    android:id="@+id/section_title_popup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/fast_scroller_indicatorHeight"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_section_indicator"
+    android:minWidth="@dimen/fast_scroller_indicatorHeight">
+
+    <TextView
+        android:id="@+id/section_indicator_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:textSize="@dimen/section_indicator_textSize"/>
+
+</FrameLayout>

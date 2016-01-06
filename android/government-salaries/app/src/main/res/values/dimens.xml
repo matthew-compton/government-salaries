@@ -15,4 +15,13 @@
     <dimen name="padding_medium">16dp</dimen>
     <dimen name="padding_large">32dp</dimen>
 
+    <!-- Fast Scroller -->
+    <dimen name="fast_scroller_trackPadding">16dp</dimen>
+    <dimen name="fast_scroller_indicatorHeight">74dp</dimen>
+    <dimen name="section_indicator_textSize">44sp</dimen>
+    <dimen name="rounded_scroller_handle_radius">10dp</dimen>
+    <dimen name="view_show_tile_small_image_size">128dp</dimen>
+    <dimen name="fragment_broadcast_item_headerHeight">40dp</dimen>
+    <dimen name="extra_small_divider_size">4dp</dimen>
+
 </resources>

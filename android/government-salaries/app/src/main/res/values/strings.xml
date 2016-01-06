@@ -3,6 +3,7 @@
     <!-- General -->
     <string name="app_name">Government Salaries</string>
     <string name="data_load_failure">"Failed to load data.\nTry again later."</string>
+    <string name="fragment_by_az_noShowsAvailable">There are no shows associated with the keyword \"%1$s\"</string>
 
     <!-- Dialogs -->
     <string name="dialog_licenses_title"><b>Open-Source Licenses</b></string>
@@ -11,6 +12,7 @@
     <string name="dialog_about_image_content_description">Android Logo</string>
 
     <!-- Menu Items -->
+    <string name="menu_filter">Filter</string>
     <string name="menu_licenses">Licenses</string>
     <string name="menu_about">About</string>
 
